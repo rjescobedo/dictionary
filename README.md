@@ -9,6 +9,10 @@ A user-friendly dictionary single-page application (SPA) that allows users to se
 - **Part of Speech**: Display the part of speech for each word.
 - **Error Handling**: Informative error messages for invalid or misspelled words.
 
+## Live Demo
+
+Check out the live demo here: [Dictionary SPA](https://hello-word-dictionary.netlify.app/)
+
 ## Installation
 
 1. Clone the repository:
