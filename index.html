@@ -3,15 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dictionary</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Hello, word!</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Dictionary</h1>
-    <form method="GET">
-        <label for="word">Word:</label>
-        <input type="text" id="word" name="word" placeholder="Type in word...">
-        <button type="submit">Get Word</button>
+    <h1>Hello, word!</h1>
+    <form id="dictionary-form" method="GET">
+        <input type="text" id="word-input" name="word" placeholder="What's the word?...">
+        <button type="submit">Word Up!</button>
     </form>
     <div id="definition-container"></div>
+    <script src="scripts.js" defer></script>
 </body>
 </html>
