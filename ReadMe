@@ -1,1 +1,43 @@
-create readme
+# Dictionary Single Page Application
+
+This is a simple dictionary single-page application that allows users to search for word definitions using the [Dictionary API](https://dictionaryapi.dev/).
+
+## Features
+
+- Search for word definitions
+- Display word phonetics and audio pronunciation
+- Show part of speech and definitions
+- Handle errors for invalid or misspelled words
+
+## Installation
+
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/rjescobedo/dictionary.git
+    ```
+2. Navigate to the project directory:
+    ```sh
+    cd dictionary
+    ```
+
+## Usage
+
+1. Open `index.html` in your web browser.
+2. Enter a word in the input field and click the "Word Up!" button.
+3. The definition, phonetics, and audio pronunciation (if available) will be displayed.
+
+## Files
+
+- **index.html**: The main HTML file that contains the structure of the application.
+- **scripts.js**: The JavaScript file that handles form submission, API fetching, and displaying the dictionary data.
+- **styles.css**: The CSS file that styles the application.
+- **site.webmanifest**: The web manifest file for the application.
+- **favicon/**: The directory containing favicon images.
+
+## License
+
+This project is licensed under the ISC License.
+
+## Author
+
+Raul Escobedo
