@@ -41,7 +41,7 @@ input {
 
 input:focus {
     box-shadow: 2px 4px 12px rgba(0, 0, 0, .3);
-    border-color: #a0c8bd;
+    border: 3px solid #a0c8bd;
 }
 
 button {
@@ -126,7 +126,7 @@ li {
 
 .error {
     color: red;
-    text-shadow: 0 0 2px white;
+    text-shadow: 1px 1px 1px black;
     font-size: 1rem;
     padding: .5rem;
 }

@@ -1,4 +1,4 @@
-const wrongWord = [
+const wrongWordList = [
     "Spell check just called. It's offended", 
     "Oops! That's not a word...yet. Wanna make it one?", 
     "Looks like you invented a new language. Congrats!",
@@ -8,6 +8,11 @@ const wrongWord = [
     "Close, but no cigar. Double-check your spelling, champ!",
     "Hmm, this word is still loading...forever."];
 
+//Error Handling Function
+function displayErrorMessage(word) {
+    return (!Array.isArray(word) || word.length === 0);
+}
+
 //Dicitonary Display
 function displayDictionary(word) {
     //Container for the definition
@@ -15,13 +20,13 @@ function displayDictionary(word) {
     definitionContainer.innerHTML = ''
     definitionContainer.style.display = 'block';
 
-    // Error handling if word doesn't exist or mispelled
+    // Display error if word doesn't exist or mispelled
     const error = document.createElement('h3');
     error.classList.add('error');
-    if (!Array.isArray(word) || word.length === 0) {
+    if (displayErrorMessage(word)) {
         console.error('Invalid word');
-        const randomIndex = Math.floor(Math.random() * wrongWord.length);
-        error.textContent = wrongWord[randomIndex];
+        const randomIndex = Math.floor(Math.random() * wrongWordList.length);
+        error.textContent = wrongWordList[randomIndex];
         definitionContainer.append(error);
         return;
     }
